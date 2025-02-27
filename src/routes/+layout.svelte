@@ -8,6 +8,7 @@
 <svelte:head>
 	<link rel="preconnect" href="ttps://use.typekit.net" />
 	<link rel="stylesheet" href="https://use.typekit.net/xnh2hog.css" />
+	<title>Made for a Reason</title>
 </svelte:head>
 
 <header>
