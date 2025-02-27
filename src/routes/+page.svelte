@@ -81,7 +81,7 @@
 	.aboutTheAuthorSection {
 		width: calc(100% - 2rem);
 		max-width: 1200px;
-		margin: 0 auto;
+		margin: 0 auto 4rem;
 		h2 {
 			text-align: center;
 		}
