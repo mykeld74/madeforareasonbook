@@ -1,0 +1,21 @@
+@import 'open-props/style';
+
+:root {
+}
+
+body {
+	font-family: 'brevia', sans-serif;
+	margin: 0;
+	padding: 0;
+	background-color: #7daa90;
+	background-image: var(--noise-5);
+
+	position: relative;
+}
+p {
+	font-size: clamp(1.25rem, 1.5vw, 1.75rem);
+}
+
+h2 {
+	font-size: clamp(2.25rem, 2.5vw, 3rem);
+}
