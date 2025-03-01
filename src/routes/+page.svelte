@@ -43,6 +43,19 @@
 		</div>
 	</div>
 </section>
+<section class="personalizedBookSection">
+	<div class="personalizedBookContent">
+		<h2>Personalized Books</h2>
+		<p>
+			Research shows that personalized books, where children encounter their own names in the story,
+			can enhance reading engagement, comprehension, and self-esteem. A 2014 study in Educational
+			Psychology found that children connect more deeply with stories featuring familiar elements
+			like their names, leading to better recall and understanding. Similarly, a 2017 University of
+			Sussex study revealed that personalized texts improve vocabulary acquisition, as associating
+			new words with their own identity strengthens retention.
+		</p>
+	</div>
+</section>
 
 <style>
 	.heroSection {
@@ -78,10 +91,11 @@
 			}
 		}
 	}
-	.aboutTheAuthorSection {
+	.aboutTheAuthorSection,
+	.personalizedBookSection {
 		width: calc(100% - 2rem);
 		max-width: 1200px;
-		margin: 0 auto 4rem;
+		margin: 3rem auto 6rem;
 		h2 {
 			text-align: center;
 		}
