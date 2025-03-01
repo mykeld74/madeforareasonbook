@@ -2,7 +2,7 @@
 	import { fade } from 'svelte/transition';
 </script>
 
-<div class="container" in:fade>
+<div class="successContainer container" in:fade>
 	<div class="successMessage">
 		<h1>Thank You for Your Purchase!</h1>
 		<p>Your copy of "Made for a Reason" will be on its way soon.</p>
@@ -11,4 +11,11 @@
 </div>
 
 <style>
+	.successContainer {
+		display: flex;
+		justify-content: center;
+		align-items: flex-start;
+		min-height: calc(100vh - 325px);
+		padding-top: 100px;
+	}
 </style>

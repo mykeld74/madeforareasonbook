@@ -19,6 +19,7 @@ import Page13 from './pages/page13.webp';
 import Page14 from './pages/page14.webp';
 import Page15 from './pages/page15.webp';
 import Page17 from './pages/page17.webp';
+import StripeLogo from './stripeLogo.webp';
 
 export {
 	Boy,
@@ -41,5 +42,6 @@ export {
 	Page13,
 	Page14,
 	Page15,
-	Page17
+	Page17,
+	StripeLogo
 };
