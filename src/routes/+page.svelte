@@ -1,6 +1,6 @@
 <script>
 	import { fade } from 'svelte/transition';
-	import { Cover } from '$lib/assets';
+	import { Cover, Rick } from '$lib/assets';
 	import Scroller from '$lib/components/Scroller.svelte';
 </script>
 
@@ -27,9 +27,9 @@
 	<Scroller />
 </section>
 <section class="aboutTheAuthorSection">
+	<h2>About the Author</h2>
 	<div class="aboutTheAuthorContent">
 		<div class="aboutTheAuthorText">
-			<h2>About the Author</h2>
 			<p>
 				Rick Schmitz is a Beloved Child of God, a husband, father and grandfather. He is also the
 				pastor of the amazing family of Westwoods Community Church in Lakewood Colorado.
@@ -40,6 +40,9 @@
 				life that this world offers and instead, see with big, open and receptive eyes the BIG
 				vision that God has for their lives AND every moment of their days.
 			</p>
+		</div>
+		<div class="aboutTheAuthorImage">
+			<img src={Rick} alt="Rick Schmitz" />
 		</div>
 	</div>
 </section>
@@ -98,6 +101,14 @@
 		margin: 3rem auto 6rem;
 		h2 {
 			text-align: center;
+		}
+	}
+	.aboutTheAuthorContent {
+		display: grid;
+		grid-template-columns: 3fr 1fr;
+		gap: 2rem;
+		@media (max-width: 870px) {
+			grid-template-columns: 1fr;
 		}
 	}
 </style>

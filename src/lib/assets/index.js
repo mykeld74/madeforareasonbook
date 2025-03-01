@@ -2,7 +2,7 @@ import Boy from './mfarBoy.webp';
 import Girl from './mfarGirl.webp';
 import MFAR from './mfar.webp';
 import Cover from './cover.webp';
-
+import Rick from './rickFamilyPic.webp';
 import Page1 from './pages/page01.webp';
 import Page2 from './pages/page02.webp';
 import Page3 from './pages/page03.webp';
@@ -18,7 +18,6 @@ import Page12 from './pages/page12.webp';
 import Page13 from './pages/page13.webp';
 import Page14 from './pages/page14.webp';
 import Page15 from './pages/page15.webp';
-import Page16 from './pages/page16.webp';
 import Page17 from './pages/page17.webp';
 
 export {
@@ -26,6 +25,7 @@ export {
 	Girl,
 	MFAR,
 	Cover,
+	Rick,
 	Page1,
 	Page2,
 	Page3,
@@ -41,6 +41,5 @@ export {
 	Page13,
 	Page14,
 	Page15,
-	Page16,
 	Page17
 };

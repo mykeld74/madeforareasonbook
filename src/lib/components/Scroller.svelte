@@ -16,7 +16,6 @@
 		Page13,
 		Page14,
 		Page15,
-		Page16,
 		Page17
 	} from '$lib/assets';
 
@@ -36,7 +35,6 @@
 		Page13,
 		Page14,
 		Page15,
-		Page16,
 		Page17
 	];
 
