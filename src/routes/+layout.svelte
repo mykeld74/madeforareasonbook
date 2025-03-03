@@ -23,6 +23,16 @@
 
 <main>
 	{@render children()}
+
+	<div class="questions">
+		<div class="question">
+			<p>
+				Have a question? Contact us at <a href="mailto:info@madeforareasonbook.com"
+					>info@madeforareasonbook.com</a
+				> and we'll get back to you as soon as possible.
+			</p>
+		</div>
+	</div>
 </main>
 <footer>
 	<div class="footer-content">
@@ -52,6 +62,19 @@
 		text-align: right;
 		p {
 			font-size: 0.875rem;
+		}
+	}
+	.question {
+		p {
+			font-size: 1.2rem;
+			text-align: center;
+			width: calc(100% - 4rem);
+			margin: 0 auto 3rem;
+			a,
+			a:visited {
+				color: #007680;
+				font-weight: 700;
+			}
 		}
 	}
 </style>

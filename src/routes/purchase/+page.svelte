@@ -268,7 +268,8 @@
 		color: white;
 		border: none;
 		border-radius: 4px;
-		font-size: 1.1rem;
+		font-size: clamp(1.4rem, 2vw, 2rem);
+		font-weight: 700;
 		cursor: pointer;
 		margin-top: 1rem;
 		transition: background 0.3s ease-in-out;
