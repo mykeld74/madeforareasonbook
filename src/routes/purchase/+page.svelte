@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { goto } from '$app/navigation';
 	import { onMount } from 'svelte';
+	import { Boy, Girl } from '$lib/assets';
 	import { loadStripe } from '@stripe/stripe-js';
 	import type { Stripe } from '@stripe/stripe-js';
 	import { PUBLIC_STRIPE_KEY } from '$env/static/public';
@@ -124,25 +125,29 @@
 					<label class="radioGroup">
 						Child's Gender*
 						<div class="radioOptions">
-							<label class="radio">
-								<input
-									type="radio"
-									bind:group={orderData.gender}
-									value="boy"
-									name="gender"
-									required
-								/>
-								Boy
+							<input
+								type="radio"
+								bind:group={orderData.gender}
+								value="boy"
+								name="gender"
+								id="boy"
+								required
+							/>
+							<label for="boy" class="radio">
+								<div class="radioImage"><img src={Boy} alt="Boy" /></div>
+								<p>Boy</p>
 							</label>
-							<label class="radio">
-								<input
-									type="radio"
-									bind:group={orderData.gender}
-									value="girl"
-									name="gender"
-									required
-								/>
-								Girl
+							<input
+								type="radio"
+								bind:group={orderData.gender}
+								value="girl"
+								name="gender"
+								id="girl"
+								required
+							/>
+							<label for="girl" class="radio">
+								<div class="radioImage"><img src={Girl} alt="Girl" /></div>
+								<p>Girl</p>
 							</label>
 						</div>
 					</label>
@@ -152,22 +157,24 @@
 					<label class="radioGroup">
 						Book Type *
 						<div class="radioOptions">
-							<label class="radio">
-								<input
-									type="radio"
-									bind:group={orderData.bookType}
-									value="hardcover"
-									name="bookType"
-								/>
+							<input
+								type="radio"
+								bind:group={orderData.bookType}
+								value="hardcover"
+								name="bookType"
+								id="hardcover"
+							/>
+							<label for="hardcover" class="radio">
 								Hardcover (${(orderData.price / 100).toFixed(2)})
 							</label>
-							<label class="radio">
-								<input
-									type="radio"
-									bind:group={orderData.bookType}
-									value="softcover"
-									name="bookType"
-								/>
+							<input
+								type="radio"
+								bind:group={orderData.bookType}
+								value="softcover"
+								name="bookType"
+								id="softcover"
+							/>
+							<label for="softcover" class="radio">
 								Softcover (${(45.0).toFixed(2)})
 							</label>
 						</div>
@@ -286,7 +293,9 @@
 		border-radius: 4px;
 		margin-bottom: 1rem;
 	}
-
+	label {
+		font-size: 1.4rem;
+	}
 	.poweredByStripe {
 		display: flex;
 		justify-content: flex-end;
@@ -298,5 +307,29 @@
 	.stripeLogo {
 		width: 100px;
 		margin-top: 1px;
+	}
+
+	input[type='radio'] {
+		display: none;
+	}
+
+	input[type='radio'] + label {
+		padding: 0.5rem 1rem;
+		background-color: #f0f0f0;
+		width: 350px;
+		border-radius: 5px;
+		border: 3px solid transparent;
+	}
+	input[type='radio']:checked + label {
+		border: 3px solid #ea882e;
+		background:
+			url('../../lib/assets/checkMark.svg') no-repeat 96% 50% / 20px,
+			#f0f0f0;
+	}
+	.radioImage {
+		width: 80px;
+		border-radius: 5px;
+		overflow: hidden;
+		margin-right: 1rem;
 	}
 </style>
