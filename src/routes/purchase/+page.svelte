@@ -233,8 +233,7 @@
 		font-weight: 500;
 	}
 
-	input,
-	select {
+	input {
 		width: 100%;
 		padding: 0.75rem;
 		border: 1px solid #ddd;
@@ -316,7 +315,7 @@
 	input[type='radio'] + label {
 		padding: 0.5rem 1rem;
 		background-color: #f0f0f0;
-		width: 350px;
+
 		border-radius: 5px;
 		border: 3px solid transparent;
 	}
@@ -331,5 +330,10 @@
 		border-radius: 5px;
 		overflow: hidden;
 		margin-right: 1rem;
+	}
+	.radioOptions {
+		display: grid;
+		grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+		gap: 1rem;
 	}
 </style>
